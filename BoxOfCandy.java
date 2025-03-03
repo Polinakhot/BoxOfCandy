@@ -14,8 +14,9 @@ public class BoxOfCandy
         {
             for (int col = 0; col < box[0].length; col++)
             {
-                s += "\n";
+                s += box[row][col] + " ";
             }
+            s += "\n";
         }
         return s; 
     }
@@ -50,9 +51,9 @@ public class BoxOfCandy
                     box[row][col] = null;
                     return c; 
                 }
-                return null; 
             }
         }
+        return null;
     }
    
 
